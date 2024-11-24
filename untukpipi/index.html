@@ -6,18 +6,32 @@
     <title>Special For You</title>
     <script src="https://dekatutorial.github.io/flwr/s.js"></script>
     <style>
-      /* Label untuk menutupi teks di pojok kiri bawah */
+      /* Gaya untuk label */
       .custom-label {
         position: fixed; /* Agar selalu berada di pojok */
         bottom: 0; /* Posisikan di bagian bawah */
         left: 0; /* Posisikan di kiri bawah */
-        background-color: white; /* Warna latar label */
+        background-color: white; /* Warna latar belakang */
         color: black; /* Warna teks */
         padding: 5px 10px; /* Ruang di dalam label */
         z-index: 9999; /* Pastikan label berada di atas elemen lain */
         font-size: 12px; /* Ukuran font */
         font-family: Arial, sans-serif; /* Font sederhana */
         border-top-right-radius: 5px; /* Membuat sudut atas label melengkung */
+        width: 100%; /* Membuat label memenuhi lebar layar */
+        text-align: left; /* Teks berada di kiri */
+      }
+
+      /* Menutupi seluruh teks asli jika perlu */
+      body::after {
+        content: " "; /* Konten kosong untuk menutupi */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px; /* Sesuaikan tinggi label untuk menutupi */
+        background-color: white;
+        z-index: 9998; /* Agar berada di bawah label "By Ahdi" */
       }
     </style>
   </head>
