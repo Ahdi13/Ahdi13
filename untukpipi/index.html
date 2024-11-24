@@ -13,12 +13,12 @@
         left: 0; /* Posisikan di kiri bawah */
         background-color: white; /* Warna latar belakang */
         color: black; /* Warna teks */
-        padding: 5px 10px; /* Ruang di dalam label */
+        padding: 5px 10px; /* Ruang di dalam label, sesuaikan agar tidak terlalu tebal */
         z-index: 9999; /* Pastikan label berada di atas elemen lain */
         font-size: 12px; /* Ukuran font */
         font-family: Arial, sans-serif; /* Font sederhana */
         border-top-right-radius: 5px; /* Membuat sudut atas label melengkung */
-        width: 100%; /* Membuat label memenuhi lebar layar */
+        white-space: nowrap; /* Agar teks tidak terbungkus ke baris berikutnya */
         text-align: left; /* Teks berada di kiri */
       }
 
@@ -29,7 +29,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 50px; /* Tinggi diperbesar untuk menutupi lebih banyak area */
+        height: 30px; /* Tinggi diperbesar agar menutupi lebih banyak area jika diperlukan */
         background-color: white;
         z-index: 9998; /* Agar berada di bawah label "By Ahdi" */
       }
@@ -48,7 +48,7 @@
       Terus jadi pribadi yang penuh semangat dan inspirasi seperti yang Didi kenal. 
       Happy birthday, Pipi! Tetap bersinar dan jadi kebanggaan orang-orang di sekitarmu.`;
       musik = `Musik.mp3`;
-      nomorWhatsapp = `+6289647719232`;
+      nomorWhatsapp = `089647719232`;
       idTelegram = ``;
 
       // Memanggil fungsi DekaTutorial
